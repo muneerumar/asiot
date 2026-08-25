@@ -1,4 +1,4 @@
-# A-SIoT — agentic partner selection in the Social Internet of Things
+# A-SIoT — n Agentic AI Framework in the Social Internet of Things
 
 Deterministic analytical simulator for socially intelligent, attack-resilient
 partner selection in the Social Internet of Things. Each requester is a bounded,
@@ -11,9 +11,8 @@ regenerate them. All policies share task generation, topology, resource
 dynamics, outcomes and random seeds, so comparisons differ only in candidate
 scoring.
 
-**Paper:** Maqsood, S.; Umar, M.M.; Iqbal, Z.; Mehmood, A. *Socially Intelligent
-and Attack-Resilient Partner Selection in the Social Internet of Things: An
-Agentic Simulation Study.* Big Data and Cognitive Computing (MDPI), 2026.
+**Paper:** Maqsood, S.; Umar, M.M.; Iqbal, Z.; Mehmood, A. *An Agentic AI Framework for Socially Intelligent
+Decision-Making in the Social Internet of Things.* Big Data and Cognitive Computing (MDPI), 2026.
 DOI to be added on acceptance. See `CITATION.cff`.
 
 ## Quick start
