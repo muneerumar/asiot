@@ -1,0 +1,74 @@
+simulation:
+  name: default
+  random_seed: 42
+  steps: 100
+  load_level: medium
+
+network:
+  node_count: 50
+  min_neighbors: 3
+  max_neighbors: 6
+  link_drop_probability: 0.02
+  link_add_probability: 0.04
+
+social:
+  initial_trust: 0.50
+  trust_learning_rate: 0.10
+  social_weight_rho: 0.70
+
+privacy:
+  threshold_min: 0.60
+  threshold_max: 0.95
+
+resources:
+  min_energy: 0.05
+  min_bandwidth: 0.05
+  min_compute: 0.05
+  initial_energy_min: 0.65
+  initial_energy_max: 1.00
+  initial_bandwidth_min: 0.55
+  initial_bandwidth_max: 1.00
+  initial_compute_min: 0.55
+  initial_compute_max: 1.00
+
+communication:
+  base_delay_ms: 50.0
+
+tasks:
+  complexity_min: 0.20
+  complexity_max: 1.00
+
+utility:
+  weights:
+    system: 0.2777777777777778
+    social: 0.2222222222222222
+    resource: 0.1666666666666667
+    privacy: 0.1666666666666667
+    incentive: 0.1666666666666667
+  system:
+    alpha_success: 0.7
+    alpha_delay: 0.3
+  social:
+    beta_trust: 0.4
+    beta_preference: 0.3
+    beta_reciprocity: 0.3
+  resource:
+    gamma_energy: 0.4
+    gamma_bandwidth: 0.3
+    gamma_compute: 0.3
+  privacy:
+    delta_privacy: 1.0
+  fairness:
+    eta_resource: 0.5
+    eta_load: 0.5
+  incentive:
+    zeta_coop: 0.4
+    zeta_efficiency: 0.3
+    zeta_trust: 0.3
+
+deployment:
+  domains: [smart_home, healthcare, transportation, utilities]
+  roles: [sensor, relay, coordinator, actuator]
+
+outputs:
+  directory: outputs

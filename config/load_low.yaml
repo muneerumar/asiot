@@ -1,0 +1,19 @@
+simulation:
+  name: load_low
+  random_seed: 42
+  steps: 100
+  load_level: low
+
+network:
+  node_count: 50
+  min_neighbors: 3
+  max_neighbors: 6
+  link_drop_probability: 0.02
+  link_add_probability: 0.04
+
+privacy:
+  threshold_min: 0.60
+  threshold_max: 0.95
+
+outputs:
+  directory: outputs

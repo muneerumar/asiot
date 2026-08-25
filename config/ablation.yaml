@@ -1,0 +1,19 @@
+simulation:
+  name: ablation
+  random_seed: 101
+  steps: 500
+  load_level: high
+
+network:
+  node_count: 50
+  min_neighbors: 3
+  max_neighbors: 6
+  link_drop_probability: 0.02
+  link_add_probability: 0.04
+
+privacy:
+  threshold_min: 0.60
+  threshold_max: 0.95
+
+outputs:
+  directory: outputs

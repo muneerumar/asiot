@@ -1,0 +1,17 @@
+# A-SIoT artifact — pinned to the versions used for every number in the paper.
+# Verified on Python 3.13.13, macOS 15 (Darwin arm64).
+# Python >= 3.11 is required (the code uses `X | Y` type syntax at runtime).
+
+numpy==2.5.2
+pandas==3.0.5
+scipy==1.18.0
+networkx==3.6.1
+matplotlib==3.11.1
+PyYAML==6.0.3
+
+# Required only for the MARL experiments (Section 4 of the paper).
+# Everything else runs without it.
+torch==2.13.0
+
+# Test suite.
+pytest==9.1.1
