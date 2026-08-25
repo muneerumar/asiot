@@ -62,21 +62,10 @@ Figures 2–4 are produced by a single command; it writes all three.
 ## Hardware and total compute
 
 All results were produced on one machine: **Apple M5, 10 cores, 24 GB RAM,
-macOS 15 (Darwin arm64), Python 3.13.13, CPU only.**
+macOS 15 (Darwin arm64), Python 3.13.13.**
 
-MPS (Apple GPU) was measured and is **3× slower** for this workload — the
-environment step is NumPy/Python-bound and the networks are small
-(184→128→128→64→9), so dispatch overhead dominates. CPU is the default;
-`--device mps` exists but is not recommended.
 
-| Stage | Compute |
-|---|---|
-| Benign, attack, ablation, sensitivity, scalability sweeps | ~2 h |
-| MARL training, 6 cells in parallel | ~24 h |
-| Evaluation, statistics, figures | ~30 min |
-| **Total for a full reproduction** | **~26 h** |
 
-Roughly 17,670 simulation runs of 500 steps each, plus 18,000 training episodes.
 
 ## Determinism
 
